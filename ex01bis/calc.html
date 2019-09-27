@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calc-Calc</title>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+        <style>
+            .block {
+                margin: 50px;
+                padding: 10px;
+                padding-bottom: 20px;
+                background-color: white;
+                border-radius: 10%;
+
+            }
+            body {
+                background-color: black;
+            }
+            h1 {
+                text-align: center;
+            }
+            #calc {
+                margin-left: 22vw;
+            }
+            span {
+                color: hotpink;
+            }
+        </style>
+        <script>
+            var calc;
+            var first_nb;
+            var operator;
+            var second_nb;
+
+            $(document).ready(function() {
+                calc = $('#calc');
+                first_nb = $('#first');
+                operator = $('#operator');
+                second_nb = $('#second');
+                calc.submit(calcuate);
+                setInterval("alert('Please, use me...')", 30000);
+            })
+            // window.onload = function() {
+            //     calc = document.querySelector("#calc");
+            //     first_nb = document.querySelector("#first");
+            //     operator = document.querySelector("#operator");
+            //     second_nb = document.querySelector("#second");
+            //     calc.addEventListener("submit", calcuate);
+            // }
+
+
+            function calcuate(event) {
+                event.preventDefault();
+                var first = parseInt(first_nb.val(), 10);
+                var second = parseInt(second_nb.val(), 10);
+                if (isNaN(first) || isNaN(second) || first < 0 || second < 0) {
+                    alert("Error :(");
+                    return ;
+                }
+                switch (operator.val()) {
+                    case "+":
+                        print(first + second);
+                        break ;
+                    case "-":
+                        print(first - second);
+                        break ;
+                    case "*":
+                        print(first * second);
+                        break ;
+                    case "/":
+                        if (second == 0)
+                            print("It's over 9000!");
+                        else
+                            print(first / second);
+                        
+                        break ;
+                    case "%":
+                        if (second == 0)
+                            print("It's over 9000!");
+                        else
+                            print(first % second);
+                        break ;
+                    default:
+                        return "This should not happened...";
+                        break ;
+
+                }
+            }
+            function print(value) {
+                console.log(value);
+                alert(value);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="block">
+            <div class="content">
+                <h1><span>(ಥ﹏ಥ)</span> Cal-Cal <span>(ಥ﹏ಥ)</span></h1>
+                <form action="#" id="calc">
+                    <input type="number" id="first">
+                    <select name="operator" id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
+                    <input type="number" id="second">
+                    <input type="submit" id="submit" value="Try me!">
+                </form>
+
+
+            </div>
+
+        </div>
+    </body>
+
+</html>
