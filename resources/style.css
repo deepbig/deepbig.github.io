@@ -133,7 +133,7 @@ a {
     position: relative;
     margin: auto;
     display: block;
-    margin-top: 55%;
+    margin-top: 30%;
     width: var(--penguin-size, 300px);
     height: var(--penguin-size, 300px);
   }
