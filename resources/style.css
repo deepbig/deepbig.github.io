@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-h1 {
+h1, h2, h3 {
     color: white;
 }
 footer {
@@ -17,6 +17,7 @@ a {
     color: hotpink;
     text-decoration: none;
     padding: 5px 10px 8px 10px;
+    font-weight: bold;
 }
 
 #a_1 {
@@ -27,6 +28,9 @@ a {
 }
 #a_3 {
     padding: 5px 10px 8px 10px;
+}
+#a_4 {
+  padding: 5px 10px 8px 10px;
 }
 
   a:hover {
