@@ -1,0 +1,235 @@
+html, head, body{
+  width:100%;
+  margin:0;
+  padding:0;
+  font-family:Verdana;
+  height: 100vh;
+}
+body{
+  background-color:rgb(24, 78, 117);
+}
+p, tr {
+  color: white;
+}
+form {
+  color: white;
+}
+.category {
+  background-color: rgb(159, 153, 241);
+}
+
+.text_about {
+  text-align: justify;
+}
+h1{
+  margin: 0;
+  color: white;
+  display: block;
+  margin-top: 1vh;
+  text-align: center;
+}
+.background {
+  width: 68vw;
+  height: auto;
+}
+
+img{
+  margin: auto;
+  display: block;
+}
+#user_css{
+  display: block;
+  margin-right: 1%;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+a:active{
+  text-decoration: underline;
+}
+#menu{
+margin: auto;
+text-align: center;
+margin-top: 3vh;
+}
+#menu ul li{
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  margin-left: 1vw;
+}
+
+#menu ul{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+#menu a{
+  display: inline-block;
+  padding: 0.5vw 1vw;
+  font-size: 1.5vw;
+  background-color: rgb(222, 221, 253);
+  color: rgb(24, 78, 117);
+}
+#menu a:active{
+  text-decoration: underline;
+}
+#content{
+width:70%;
+margin: auto;
+margin-top: 1%;
+}
+
+h2{
+  color: rgb(24, 78, 117);
+  text-align: center;
+  background-color: rgb(222, 221, 253);
+  padding: 1vw;
+}
+#active{
+  text-decoration: underline;
+}
+
+#form_css{
+  width: 40%;
+  margin: auto;
+  margin-top:3%;
+}
+#error{
+  background-color: #96281B;
+  color:white;
+  width:40%;
+  padding: 1%;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+#login_done{
+  width:40%;
+  padding: 1%;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+
+#inscription-ok{
+  background-color:rgb(222, 221, 253);
+  color:rgb(24, 78, 117);
+  width:40%;
+  padding: 1%;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+#inscription-ok a{
+  text-decoration:underline;
+}
+
+h3{
+	color: white;
+	text-align: center;
+}
+#adress{
+	color: white;
+	font-style: italic;
+	font-size: 1.2vw;
+	text-align: center;
+}
+
+
+#admin-accueil{
+  width: 50vw;
+  margin: auto;
+}
+#admin-accueil li{
+  list-style: none;
+}
+#admin-accueil a{
+  display: block;
+  padding: 1vw;
+  background-color: rgb(222, 221, 253);
+  color: rgb(24, 78, 117);
+  margin-top: 1vh;
+  font-size: 1,5vw;
+  text-align: center;
+}
+
+
+
+.admin-users{
+  text-decoration: underline;
+}
+
+#tab-admin-users table{
+  width: 50vw;
+  margin:auto;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+#tab-admin-users td{
+  width: 10vw;
+  margin:auto;
+  text-align: center;
+  border: 1px solid;
+}
+#tab-admin-users th{
+  border: 1px solid;
+}
+
+aside{
+  width: 15vw;
+  background-color: rgb(222, 221, 253);
+  color: rgb(24, 78, 117);
+  padding:1vw;
+  float:left;
+  font-size: 1.2vw;
+}
+.last-beer{
+background-color: rgb(159, 153, 241);
+color: rgb(24, 78, 117);
+text-align: center;
+padding: 1vw;
+}
+#boutique-beer{
+  width:40vw;
+  margin: auto;
+  border: none;
+}
+.acheter-beer a{
+  padding:1vh 2vh;
+  text-align:center;
+  display: block;
+  margin-bottom: 4vh;
+  text-decoration: underline;
+}
+#page-beer{
+  border:none;
+}
+
+#tab-admin-beer table{
+  width: 60vw;
+  margin:auto;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+#tab-admin-beer td{
+  width: auto;
+  margin:auto;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 1vw;
+}
+#tab-admin-beer th{
+  border: 1px solid black;
+  width: auto;
+  font-size: 1.2vw;
+  background-color: rgb(222, 221, 253);
+  color: rgb(24, 78, 117);
+}
+
+

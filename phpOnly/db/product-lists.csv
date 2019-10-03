@@ -1,0 +1,4 @@
+id,product,type,price,volume,image
+1,Bells-Oberon,Ale,0.99,2.0L,../img/Bells-OberonAle.jpg
+2,Lost-Abbey,Sour,1.99,2.5L,../img/Lost_Abbey_sour.jpg
+3,Left-Hand-Milk-Stout,Stout,2.99,5.0L,../img/Left-Hand-Milk-Stout-Nitro.jpg
