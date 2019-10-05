@@ -69,6 +69,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="Landing">
+        <h1>If this does not work, <a style="color: red" href="https://github.com/deepbig/X-Press-Publishing">Click Me!</a></h1>
         <h2>CHOOSE A SERIES</h2>
         <div className="series item-list">
           {this.renderSeries()}
