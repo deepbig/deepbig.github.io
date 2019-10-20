@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>DeepBig Article</title>
+    <style>
+        p, h1{
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <h1 class="test-center">IT Security Enhancing Security by Adding Multiple Encryption Layers</h1>
+        <h2>Hongsuk Ryu</h2>
+        <p class="text-justify">
+                Over the past few years, the internet becomes mainstream and billions of devices connected to the internet. Many studies show the skyrocketing trends in the usage of the internet. A recent Symantec Internet Security Threat Report explains that there are 25 connected devices per 100 inhabitants in the U.S. and there will be roughly 200 billion connected devices by 2020 (Symantec Corporation). The growing number of internet users faced a serious security concern. John Mello, a researcher on breaches and cyberattacks, reported there are more than 3 million records stolen from breaches very day (Mello). A study at the University of Maryland discovered that one in three Americans affected by the hacker's attacks every 39 seconds on average (Cukier). Since our society is moving toward the digitalized world, the cost of data breaches and cyberattacks are higher and higher. Therefore, securing your network for the connected devices and your online based business would be needed more than ever. 
+        </p>
+        <p class="text-justify">
+                Improving your IT security can be achieved in many ways. A lot of articles explain many types of security layers that hinder the hackers’ attacks. In this paper, I will introduce one of the easy ways to secure your device, multiple encryptions. Multiple encryptions are the process of encrypting an encrypted message on or more times by adding multiple layers. Using multiple encryption techniques, your password and data will be incredibly secure, and you will secure your data at all times. Since a study shows that 95 percent of cybersecurity breaches are due to human error, it is very unlikely to be a target of hackers (Yerian). Therefore, if you don't want to spend an expensive cost on improving your level of cybersecurity, I suggest multiple encryptions for you to get away from 95 percent of hacker's attacks.
+        </p>
+        <p class="text-justify">
+                To begin with, I will introduce some types of layers that you can add and encrypt. Open Systems Interconnection model (OSI model) breaks down network communication into seven layers which are useful for identifying network issues. the seven layers are the application, presentation, session, transport, network, data link, and physical layers. In this paper, I will focus on encryption of application and transport layers, because those layers are also represented in Transmission Control Protocol / Internet Protocol (TCP/IP), which is considered as a concise version of the OSI model. Therefore, those layers are mostly known types of encryption and have better access to information through online.
+        </p>
+        <p class="text-justify">
+                The application layer is closest to the end user and acts as an interface between the applications and the underlying network. The application layer protocols help exchange data between programs running on the source and destination hosts (Simon). HTTP, TCP, and DNS are the common application layer protocols and I will focus on HTTP and how to apply secure HTTP on your website in this paper.
+        </p>
+        <p class="text-justify">
+                HTTP is the abbreviation of HyperText Transfer Protocol that contains a set of instructions for the software that controls the movement of files on the internet. HTTP play a fundamental role in the web browser by getting, posting and putting information on the internet through the website. However, HTTP is not secure because the messages can be intercepted during the process. To improve the security on a web browser, HTTP Secure (HTTPS) was developed and secure the data by encrypting the data flow between end to end users. Therefore, if you are collecting any sensitive information on your website including email and password, enabling HTTPS will provide you a great level of security on your website. To apply HTTPS, you should create an SSL certificate. This is like an ID card for your website which proves the website is your website. the certificate is a paragraph of letters and number that only your website knows, like a long password. When people visit your site via HTTPS that password is checked, and if it matches, it automatically verifies and encrypts everything flowing to and from it (Helpton). Following steps such as activating and installing the certificate will be automated by your web host within 1 or 2 days. After the install process, you should be able to access your website with HTTPS. At this moment, you successfully installed an SSL certificate and enabled the HTTPS protocol. The last step you need to do is making sure the user accessing your website through HTTPS. It does not need to update all links in your pages because if you enable HTTPS on pages where the user is not submitting sensitive data on there, it is just wasting encryption processing and slowing down the experience. Therefore, set some target pages, such as login or cart checkout, to use the HTTPS links.
+        </p>
+        <p class="text-justify">
+                While the application layer provides interaction for the user to the network, the transport layer transmits the data between the two ends. The transport layer is responsible for establishing a temporary communication session between two applications and delivering data between them (Green). The processes that transport layer take care of are the transmission, retransmission of data if it fails at the previous attempt, flow control, and error control. During the process, the transport layer has responsibilities to track each individual conversation flowing between a source application and a destination application. There are two popular transport layer protocols, TCP and UDP. In this paper, I will focus on TCP and introduce how to improve security by developing TCP. 
+        </p>
+        <p class="text-justify">
+                The transmission control protocol (TCP) is used for applications in which reliable connections between hosts are necessary (Green). TCP checks for transmission errors, lost packets, packets out of order. Therefore, TCP is required for applications such as databases, web browsers, and email clients. However, TCP is not encrypted which poses a potential security risk. Therefore, to fully secure the communication between client applications and database server using transport-layer security (TLS). 
+        </p>
+        <p class="text-justify">
+                TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the internet (Internet Society). The TLS provide higher security not only for sensitive information such as logins, credit card details, and personal details but also for online chats and conference calls from the hacker's monitoring. By enabling client and server applications to support TLS, it ensures that data transmitted between them is encrypted with secure algorithms and not viewable by third parties (Internet Society). TLS is designed to operate on top of a reliable transport protocol such as TCP. Therefore, it is very easy to enable TLS on your web browsers just by clicking button through internet options of browser and the recent devices are already enabled by default (see Exhibit 1). However, to make the internet more secure, TLS needs to be widely deployed by all kinds of applications across the internet. There are several public libraries you can apply for your application, such as OpenSSL, LibreSSL, and GnuTLS. For example, according to Nicolas Lidzborski, a Gmail security engineering lead, posted an article explaining the security improvement by adapting TLS on Gmail since 2014. Therefore, no one can listen in on the user’s messages as they go back and forth between the user and Gmail’s servers, no matter if you are using public WiFi. Also, every single email message the user sends or receives is encrypted while moving internally (Lidzborski). It makes the messages are secure when they move between the user and Gmail's servers.
+        </p>
+        <p class="text-justify">
+                In conclusion, you can greatly improve your level of cybersecurity by adding two more layers using encryption techniques. Getting the services are mostly free or less than $100 per year. Therefore, if you are one of the easiest targets of the hacker, try to adapt these techniques to hinder the hacker’s attacks and get away from the cost of serious data breaches.
+        </p>
 
+        <h3>Exhibit 1</h3>
+        <h4>How to enable TLS on web browser, Microsoft Internet Explorer</h4>
+        <p class="text-justify">
+                Step 1: Open Internet Explorer
+                Step 2: From the menu bar, click Tools > Internet Options > Advanced tab
+                Step 3: Scroll down to Security category, manually check the option box for Use TLS 1.1 and 1.2
+                Step 4: Click OK
+                Step 5: close your browser and restart Internet Explorer.
+        </p>
+        <h3>Works Cited</h3>
+        <p class="text-justify">
+                Cukier, Michel. "Study: Hackers Attack Every 39 Seconds." 9 February 2007. University of Maryland: A. James Clark School of Engineering. https://eng.umd.edu/news/story/study-hackers-attack-every-39-seconds. 12 May 2019.
+                Green, Julius. "Chapter 9: Transport Layer." 2016. SlidePlayer. https://slideplayer.com/slide/8992476/. 12 May 2019.
+                Helpton, Shane. "How to get HTTPS: Setting up SSL on your website." 6 June 2013. How To Expert. http://www.howto-expert.com/how-to-get-https-setting-up-ssl-on-your-website/. 12 May 2019.
+                Internet Society. "TLS Basics." n.d. Internet Society . https://www.internetsociety.org/deploy360/tls/basics/. 12 May 2019.
+                Lidzborski, Nicolas. "Staying at the forefront of email security and reliability: HTTPS-only and 99.978% availability." 20 March 2014. Offical Google Blog. https://googleblog.blogspot.com/2014/03/staying-at-forefront-of-email-security.html. 12 May 2019.
+                Mello, John. "Cybercrime Diary: Who’s Hacked? List Of Q3 2018 Data Breaches And Cyberattacks." 2 October 2018. Cybersecurity Ventures. https://cybersecurityventures.com/cybercrime-diary-whos-hacked-list-of-q3-2018-data-breaches-and-cyberattacks/. 12 May 2019.
+                Simon, Marjorie. "Chapter 10: Application Layer." 2016. SlidePlayer. https://slideplayer.com/slide/8946953/. 12 May 2019.
+                Statista. "Number of Internet Users Worldwide from 2005 to 2018 (in Millions)." n.d. Statista - The Statistics Portal. www.statista.com/statistics/273018/number-of-internet-users-worldwide/. 12 May 2019.
+                Symantec Corporation. "Internet Security Threat Report (ISTR) 2019." 2019. Symantec . https://www.symantec.com/security-center/threat-report. 12 May 2019.
+                Yerian, Emerson. "Did you know? 95% of ALL Data Breaches Are Caused by Human Error." 25 January 2018. ETC TechSolusions. https://www.etctech.net/2018/01/25/did-you-know-95-of-all-data-breaches-are-caused-by-human-error/. 12 May 2019.                
+        </p>
+    </div>
+</body>
+</html>
