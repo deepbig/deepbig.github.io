@@ -2,7 +2,7 @@ import camelcaseKeys from './camelcase-keys/index';
 import 'whatwg-fetch';
 
 const XPress = {};
-const baseUrl = 'http://localhost:4000/api';
+const baseUrl = 'https://obscure-sierra-80010.herokuapp.com/api';
 
 XPress.getSeries = () => {
   const url = `${baseUrl}/series`;
